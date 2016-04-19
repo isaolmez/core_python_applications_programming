@@ -1,4 +1,6 @@
 ## Methods
+# We can create functions without declaring a class. This is opposite of Java where everything starts with a class.
+# Also we do not need methods to run code. There is no main function. And execution directly starts from top to down.
 
 def method1():
     print "hello world"

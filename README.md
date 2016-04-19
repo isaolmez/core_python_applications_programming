@@ -1,1 +1,1 @@
-# core_python_applications_programming
+# core_python_programming

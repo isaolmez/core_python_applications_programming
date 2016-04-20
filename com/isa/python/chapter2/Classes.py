@@ -36,3 +36,5 @@ print "---showVersion()"
 isa.showVersion()
 print isa.addMe2Me(2)
 print Test.showVersion.__doc__
+print type(isa)
+print type(Test)

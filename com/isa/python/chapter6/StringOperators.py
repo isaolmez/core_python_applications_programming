@@ -35,7 +35,7 @@ print "d" in text
 print "---- concatenation"
 print "%s %s" % ("isa", "olmez")
 print "".join(("a", "b", "c"))
-print "".join(["a", "b", "c"])
+print ":".join(["a", "b", "c"])
 
 # Compile-time String Concatenation
 s1 = "a" "b" "c"
@@ -49,8 +49,4 @@ print repr("a" + u"b" + "c")
 
 ## Repetition
 print "xyz" * 3
-
-
-
-
-
+# text[0]="" # gives error

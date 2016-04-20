@@ -37,6 +37,8 @@ print "Operational Functions"
 print abs(-2.3)
 print abs(-2)
 
+
+## !! coerce is only used with numeric types
 print coerce(1, 1.0)
 print coerce(1.0, 1L)
 

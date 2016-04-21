@@ -20,7 +20,7 @@ print text[0:5:2]
 print text[::-1]
 print text[-1::-1]
 print text[0::-1]
-print text[:None] # None is equivalent to no literal at all
+print text[:None]  # None is equivalent to no literal at all
 
 print "\n---Multiple prints"
 for item in range(len(text), 0, -1):
@@ -28,11 +28,11 @@ for item in range(len(text), 0, -1):
 
 print
 
-for item in [None] + range(-1, - len(text), -1): # concatenate the list
+for item in [None] + range(-1, - len(text), -1):  # concatenate the list
     print text[:item]
 
 print
 
-first = [1,2,3,4]
+first = [1, 2, 3, 4]
 second = list(first)
 print id(first) == id(second)

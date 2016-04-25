@@ -41,3 +41,43 @@ while True:
         print iter1.next(),
     except StopIteration, s:
         break
+
+## Dictionaries as iterables
+print "---- Dictionaries"
+d1 = {1: 1, 2: 2}
+print type(d1.keys()), d1.keys()
+print type(d1.values())
+print type(d1.items())
+print type(
+    d1.iterkeys()), d1.iterkeys()  # iterator string representation is not its contents, but the info about the object
+print type(d1.itervalues())
+print type(d1.iteritems())
+
+## Files
+print "---- Files"
+file1 = open("test.txt", "r")
+for line in file1:
+    print line,
+print
+
+## Mutation during iteration
+list1 = [0, 1, 2, 3]
+for item in list1:  # Iterator logic seems to depend on the rank of item.
+    print item
+    if item == 0:
+        del list1[0]
+
+## iter(obj), iter(func, sentinel)
+list1 = [1, 2, 3, 4]
+
+# Let's try sentinel
+import random
+
+
+def iterFunc():
+    return random.choice([0, 1, 2, 3, 4])
+
+
+for item in iter(iterFunc, 0):
+    print item,
+print

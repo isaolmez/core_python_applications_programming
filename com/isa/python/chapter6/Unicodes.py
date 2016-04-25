@@ -49,14 +49,18 @@ def readUnicodeFromFile(fileName):
     else:
         # bytes_in = targetFile.read()
         bytes_in = targetFile.readlines()
-        print bytes_in, type(bytes_in)
+        print "1st:", bytes_in, type(bytes_in)
         for item in bytes_in:
-            print item.decode(CODEC)  ## try with utf-16
+            print "2nd:", item.decode(CODEC)  ## try with utf-16
 
-        print [line.decode(CODEC) for line in bytes_in]
+        print "3rd:", [line.decode(CODEC) for line in bytes_in]
+        for line in [line.decode(CODEC) for line in bytes_in]:
+            print "4th:", line,
+        print
         targetFile.close()
 
 
+print "---- Write to file with encoding specified"
 writeToFile("ascii.txt")
 readFromFile("ascii.txt")
 writeUnicodeToFile("unicode.txt")

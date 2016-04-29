@@ -1,4 +1,8 @@
-## Decorators in Pyhton take a function and adds code before or after the actual function. And finally returns another function.
+## Decorators in Pyhton
+# * take a function as argument
+# * adds code before or after the actual function.
+# * define an inner function
+# * and finally returns that inner function.
 from time import ctime, sleep
 
 

@@ -17,6 +17,7 @@ bar()
 
 
 ## Function objects can be passed to other functions.
+# NOTE: do not use invocation operator (). Pass only the reference
 def x(func):
     return func()
 
